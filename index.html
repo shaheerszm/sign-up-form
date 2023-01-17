@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+  <body>
+    <div class="side-img"><img src="./background.jpg" alt="background image"></div>
+    <div class="form-column">
+      <div class="intro-msg">
+        <p>Helicopters are awesome!</p>
+        <p>Sign up below for a chance to win a <em>free </em>helicopter tour over Toronto.</p>
+      </div>
+      <form id="registration" action="" method="get"> 
+        <p>Let's do this!</p>
+        <div class="form-row">
+          <div>
+            <label for="first-name">First Name</label>
+            <input class="validate" id="first-name" type="text" name="first-name" required>
+          </div>
+          <div>
+            <label for="last-name">Last Name</label>
+            <input class="validate" id="last-name" type="text" name="last-name" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div>
+            <label for="email">Email</label>
+            <input class="validate" id="email" type="email" name="email" required>
+          </div>
+          <div>
+            <label for="phone">Phone Number</label>
+            <input id="phone" type="tel" name="phone">
+          </div>
+        </div>
+        <div class="form-row"> 
+          <div>
+            <label for="password">Password</label>
+            <input id="password" type="password" name="password" required>
+          </div>
+          <div>
+            <label for="password-check">Confirm Password</label>
+            <input id="password-check" type="password" name="password-check" required>
+          </div>
+          <div>
+            <div id="password-error">Passwords do not match</div>
+          </div>
+        </div>
+      </form>
+      <div class="footer">
+        <button type="submit" form="registration">Create Account</button>
+        <p>Already have an account? <a href="https://www.google.com/">Log in</a></p>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

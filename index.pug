@@ -1,0 +1,47 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Sign Up
+    link(rel="stylesheet", href="style.css", type="text/css")
+  body
+    .side-img
+      img(src="./background.jpg", alt="background image")
+    .form-column
+      .intro-msg
+        p Helicopters are awesome!
+        p Sign up below for a chance to win a 
+          em free 
+          | helicopter tour over Toronto.
+      form#registration(action="", method="get") 
+        p Let's do this!
+        .form-row
+          div
+            label(for="first-name") First Name
+            input#first-name.validate(type="text", name="first-name", required)
+          div
+            label(for="last-name") Last Name
+            input#last-name.validate(type="text", name="last-name", required)
+        .form-row
+          div
+            label(for="email") Email
+            input#email.validate(type="email", name="email", required)
+          div
+            label(for="phone") Phone Number
+            input#phone(type="tel", name="phone")
+        .form-row 
+          div
+            label(for="password") Password
+            input#password(type="password", name="password", required)
+          div
+            label(for="password-check") Confirm Password
+            input#password-check(type="password", name="password-check", required)
+          div
+            #password-error Passwords do not match
+      .footer
+        button(type="submit", form="registration") Create Account
+        p Already have an account? 
+          a(href="https://www.google.com/") Log in
+    script(src="index.js")
